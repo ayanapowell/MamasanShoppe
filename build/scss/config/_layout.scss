@@ -1,0 +1,47 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {box-sizing: inherit;}
+*:focus {outline: 0;}
+*{ -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;outline:none !important;}
+
+::selection {
+	background: $blue;
+	color:$white;
+	/* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: $red;
+	color:$white;
+	/* Gecko Browsers */
+}
+
+html,body {
+	height: 100%;
+	font-family:$trade;
+}
+
+body {
+	background-color:$white;
+	text-rendering: optimizeLegibility !important;
+	margin:0 auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	outline:0;
+	width:100%;
+}
+
+// Colors
+.black {color:$black !important;}
+.grey {color:$grey !important;}
+.darkgrey {color:$darkgrey !important;}
+.white {color:$white !important;}
+.blue {color:$blue !important;}
+.red {color:$red !important;}
+.green {color:$green !important;}
+.yellow {color:$yellow !important;}
+.burgundy {color:$burgundy !important;}
+.cyan {color:$cyan !important;}
+.darkblue {color:$darkblue !important;}

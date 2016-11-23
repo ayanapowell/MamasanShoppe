@@ -1,0 +1,26 @@
+{
+	"name": "MamasanShop",
+	"version": "1.0.1",
+	"description": "MamasanShop",
+	"author": "Powell Kids",
+	"private": false,
+	"devDependencies": {
+		"browser-sync": "*",
+		"gulp": "^3.9.0",
+		"gulp-autoprefixer": "*",
+		"gulp-combine-media-queries": "*",
+		"gulp-sourcemaps": "^1.6.0",
+		"gulp-concat": "*",
+		"gulp-css-globbing": "^0.1.8",
+		"gulp-csscomb": "*",
+		"gulp-jshint": "^2.0.0",
+		"gulp-minify-css": "*",
+		"gulp-notify": "*",
+		"gulp-order": "*",
+		"gulp-plumber": "*",
+		"gulp-rename": "*",
+		"gulp-sass": "*",
+		"gulp-uglify": "*",
+		"jshint": "^2.8.0"
+	}
+}

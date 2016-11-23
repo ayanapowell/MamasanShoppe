@@ -1,0 +1,72 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin line-height($size) {
+	line-height: $size;
+	line-height:calculateRem($size);
+}
+
+@mixin font($font-size, $line-height) {
+  @include font-size($font-size);
+  @include line-height($line-height);
+}
+
+
+// MEDIA QUERY
+
+$break-med: 769px;
+$break-small:768px;
+
+@mixin mobile {
+	  @media (max-width: $break-small) { @content; }
+}
+
+@mixin desktop {
+	@media (min-width: $break-med) { @content; }
+}
+
+// How do you use these? Lets say you have a div that at desktop is 33.33% width because its in a grid
+// but at mobile it goes stacks and goes all the way across
+
+.grid {
+	width:100%;
+	// flex is a layout style. its awesome, def learn it.
+	display:flex;
+	flex-wrap:wrap; 
+
+	// but at mobile we dont need the flex grid So lets turn it off
+	// this is a way of nesting mobile styles within the desktop styles
+	@include mobile {
+		// now at mobile. it'll go from display:flex to display:block;
+		// we dont have to worry about flex wrap as it'll be invalid without display flex turned on
+		display:block;
+	}
+	
+	// grid item is the 3 blocks within our grid row.
+	.grid-item {
+		width:33.33%; // 1/3 of the space on desktop
+		
+		@include mobile {
+			// now that we're stacking on mobile with display block, lets make these take up the full width
+			width:100%; 
+		}
+	}
+}
+
+// another way to use the mixin is to declare it once and put everything inside of it
+// I prefer to nest though since it makes it easier to see all the styles applied in one place.
+@include mobile {
+	.grid {
+		display:block;
+	}
+	.grid-item {
+		width:100%;
+	}
+}
