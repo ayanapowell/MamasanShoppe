@@ -7,30 +7,30 @@ html {
 
 ::selection {
 	background: $blue;
-	color:$white;
+	color: $white;
 	/* WebKit/Blink Browsers */
 }
 ::-moz-selection {
 	background: $red;
-	color:$white;
+	color: $white;
 	/* Gecko Browsers */
 }
 
 html,body {
 	height: 100%;
-	font-family:$trade;
+	font-family: $cormorant;
 }
 
 body {
-	background-color:$white;
+	background-color: $grey;
 	text-rendering: optimizeLegibility !important;
-	margin:0 auto;
+	margin: 0 auto;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-	outline:0;
-	width:100%;
+	outline: 0;
+	width: 100%;
 }
 
 // Colors

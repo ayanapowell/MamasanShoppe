@@ -1,0 +1,44 @@
+
+// All base type styles should go in here.
+
+ol,ul {
+	list-style-position: inside;
+	list-style: none;
+}
+
+// Crispy Text. turn this off and on to see what i mean.
+h1, h2, h3, h4, h5, h6, p,label, a, li {
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: $white;
+	font-weight: normal;
+	font-family: $trade;
+}
+p {
+	font-family: $trade;
+	font-size: get-vw(64px);
+	line-height: get-vw(104px);
+}
+
+//  you can set styles ither by tag or by class. if you choose class then baseline all tags like this:
+h1,h2,h3,h4,h5,h6 {
+	font-weight: inherit;
+	font-size: inherit;
+	letter-spacing: inherit;
+	color: inherit;
+}
+
+a {
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+}
+
+// then create classes
+.title {
+	@include font(32px,44px);
+}
