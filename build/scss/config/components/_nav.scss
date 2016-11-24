@@ -1,9 +1,23 @@
 nav {
   width: 80%;
   margin: 0 auto;
-  background-color: red !important;
+  height:  12vh;
 }
 
-.nav-option {
-  color: red;
+.title {
+  float: left;
+}
+
+.nav {
+  &-items {
+    position: relative;
+    float: right;
+  }
+  &-item {
+    display: inline-flex;
+    padding: 32px 50px;
+  }
+  &-item:last-child {
+    padding-right: 0px;
+  }
 }

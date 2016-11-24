@@ -13,12 +13,12 @@ h1, h2, h3, h4, h5, h6, p,label, a, li {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	color: $white;
+	color: $darkgrey;
 	font-weight: normal;
-	font-family: $trade;
+	font-family: $cormorant;
 }
 p {
-	font-family: $trade;
+	font-family: $cormorant;
 	font-size: get-vw(64px);
 	line-height: get-vw(104px);
 }
@@ -41,4 +41,8 @@ a {
 // then create classes
 .title {
 	@include font(32px,44px);
+}
+
+.nav-item {
+	font-weight: 700;
 }

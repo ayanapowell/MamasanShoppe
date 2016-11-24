@@ -14,7 +14,7 @@ var app = app || {};
 (function($){
   app.components = {
   	logWhatsInHere : function () {
-  		console.log('What it do');
+  		// alert('What it do');
   	}, // this commma is very important . dont forget, leads to broken code.
 
   	alertWhatsInHere : function () {
