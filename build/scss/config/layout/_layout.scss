@@ -34,17 +34,6 @@ body {
 	visibility: hidden;
 }
 
-.overlay {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background-color: black;
-	opacity: 0.3;
-}
 // Colors
 .black {color:$black !important;}
 .grey {color:$grey !important;}

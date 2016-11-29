@@ -4,8 +4,6 @@
   h1 {
     width: 100%;
   }
- 
-
 }
 
 .grid-container {
@@ -19,13 +17,11 @@
     height:300px;
     position:relative;
     display:block;
-
     &:hover {
       .overlay {
         opacity:0.4;
       }
     }
-
     .overlay {
       position:absolute;
       top:0;
