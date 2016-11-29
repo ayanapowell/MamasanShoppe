@@ -1,14 +1,22 @@
 .grid {
-  width: 80%;
-  margin-top: 50px;
-  display:flex;
-  flex-wrap:wrap;
-  margin: 0 -.5%;
+  margin: 50px 0;
   h1 {
     width: 100%;
   }
+  &-items {
+    width: 80%;
+    display:flex;
+    flex-wrap: nowrap;
+    margin: 0 -.5%;
+    margin: 0 auto;
+  }
   &-item {
     max-width: 33.33%;
+    height: 0;
+    padding-bottom: 33.33%;
     position: relative;
-  } 
+  }
+  &-item:nth-child(2) {
+    margin: 0 .5%;
+  }
 }
