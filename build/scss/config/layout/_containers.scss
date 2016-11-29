@@ -1,0 +1,20 @@
+.grid {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  h1 {
+    width: 100%;
+  }
+  &-item {
+    max-width: 33%;
+  }
+  &-item:nth-child(2) {
+    margin-left: .5%;
+    margin-right: .5%;
+  }
+  &-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+  }
+}
