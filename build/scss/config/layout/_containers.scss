@@ -6,12 +6,9 @@
     width: 100%;
   }
   &-item {
-    max-width: 33%;
-  }
-  &-item:nth-child(2) {
-    margin-left: .5%;
-    margin-right: .5%;
-  }
+    max-width: 33.33%;
+    position: relative;
+  } 
   &-item img {
     object-fit: cover;
     width: 100%;
