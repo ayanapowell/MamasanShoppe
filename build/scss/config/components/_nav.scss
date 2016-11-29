@@ -1,25 +1,29 @@
 nav {
   width: 80%;
   margin: 0 auto;
-  height:  12vh;
+  height:  10vh;
 }
 
 .title {
   float: left;
   cursor: pointer;
+  &:hover {
+    color: $darkaqua;
+  }
 }
 
-.nav {
-  &-items {
-    position: relative;
-    float: right;
-    cursor: pointer;
-  }
-  &-item {
+.nav-items {
+  position: relative;
+  float: right;
+  cursor: pointer;
+  .nav-item {
     display: inline-flex;
     padding: 32px 50px;
-  }
-  &-item:last-child {
-    padding-right: 0px;
+    &:hover {
+      color: $darkaqua;
+    }
+    &:last-child {
+        padding-right: 0px;
+    }
   }
 }
