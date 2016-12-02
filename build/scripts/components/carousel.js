@@ -3,7 +3,6 @@ var win = $(window);
 (function($){
   app.carousel = {
   	initializeSlider : function () {
-      console.log("initialize slider");
   		$('.my-carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -18,7 +17,6 @@ var win = $(window);
       app.carousel.els = {
     	  carousel : $('.my-carousel'),
       };
-      console.log('init');
       app.carousel.initializeSlider();
 
     }

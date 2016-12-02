@@ -26,4 +26,32 @@ nav {
         padding-right: 0px;
     }
   }
+  @include mobile {
+
+  }
+}
+
+#menu {
+  float: right;
+  background-color: $grey !important;
+  padding-top: 32px;
+  cursor: pointer;
+  @include mobile {
+		width:1.4em;
+		display: block;
+		background:#ddd;
+		font-size:1.35em;
+		text-align: center;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.showing {
+  display: block;
 }
