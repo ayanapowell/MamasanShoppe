@@ -2,6 +2,7 @@ nav {
   width: 80%;
   margin: 0 auto;
   height:  10vh;
+  position: relative;
 }
 
 .title {
@@ -13,10 +14,11 @@ nav {
 }
 
 .nav-items {
-  position: relative;
-  float: right;
+  position: absolute;
+  right: 0;
   cursor: pointer;
-  transition: 1s ease all;
+  transition: 0.5s ease all;
+  z-index: 10;
   .nav-item {
     display: inline-flex;
     padding: 32px 50px;
@@ -27,55 +29,22 @@ nav {
         padding-right: 0px;
     }
     // @include mobile {
-    //   display: list-item;
-    //   list-style: none;
-    //   text-align: center;
-    //   padding: 0;
-    //   margin: 0;
-    //   font-family: $lora;
-    //   color: $grey;
-    //   text-transform: uppercase;
-    //   @include font(30px, 50px);
-    //
-    //   &:first-child {
-    //     &::before {
-    //       content: 'close';
-    //       @include font-size(12px);
-    //       width: 100%;
-    //       float: left;
-    //       text-align: left;
-    //       padding: 30px;
-    //     }
-    //   }
+    //   display: none;
     // }
   }
-  // @include mobile {
-  //   position: fixed;
-  //   right: 0;
-  //   top: 0;
-  //   bottom: 0;
-  //   width: 40%;
-  //   height: 100%;
-  //   z-index: 10;
-  // }
 }
 
 #menu {
-  float: right;
-  background-color: $grey !important;
+  display: inline-flex;
   padding-top: 32px;
-  cursor: pointer;
-  z-index: 10;
-
+  &:hover {
+   color: $darkaqua;
+  }
   @include mobile {
 		width: 1.4em;
 		display: block;
-		background: #ddd;
 		font-size: 1.8em;
 		text-align: center;
-  }
-  @include desktop {
-    display: none;
   }
 }
 
@@ -84,5 +53,6 @@ nav {
 }
 
 .showing {
-  display: block;
+  display: inline-flex !important;
+  color: red;
 }

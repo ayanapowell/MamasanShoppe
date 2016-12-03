@@ -4,36 +4,51 @@
   position: fixed;
   right: 0;
   z-index: 9;
-  transition: 0.8s ease all;
+  transition: 0.7s ease all;
   background-color: inherit;
 
-  img {
+  img#close-button {
     width: 8%;
     position: absolute;
     right: 0;
     margin: 30px 40px;
     cursor: pointer;
   }
+
+  img#logo {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 100px;
+  }
   p {
-    @include font(30px, 20px);
+    @include font-size(23px);
     cursor: pointer;
     text-align: center;
-    font-family: $opensans;
-    // border-bottom/: 2px solid $darkgrey;
-    // width: 0;
-    margin: 40px 20%;
+    font-family: $raleway;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 50px;
     text-transform: uppercase;
     &:hover {
       color: $darkaqua;
     }
-    // img {
-    //   width: 80%;
-    // }
+  }
+
+  .logo {
+    p {
+      @include font-size(13px);
+      margin: 0;
+      padding-top: 20px;
+      &:last-child {
+        padding: 5px;
+      }
+    }
   }
   .close-icon {
     width: 80%;
     height: 65px;
     margin-left: 10%;
+    margin-bottom: 100px;
     border-bottom: 1px solid $white;
   }
 }

@@ -10,7 +10,7 @@ var win = $(window);
         autoplaySpeed: 3000,
         dots: true,
         arrows: false,
-        appendDots: $('.arrows')
+        appendDots: $('.arrows'),
       });
   	},
     init : function() {
