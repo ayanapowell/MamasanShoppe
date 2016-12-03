@@ -18,6 +18,7 @@ html {
 
 html,body {
 	height: 100%;
+	position: relative;
 	font-family: $cormorant;
 }
 
@@ -34,6 +35,9 @@ body {
 	visibility: hidden;
 }
 
+section {
+	position: relative;
+}
 // Colors
 .black {color:$black !important;}
 .grey {color:$grey !important;}

@@ -5,10 +5,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,400i,500,700" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<div class="responsive-nav-items" id="responsive-nav">
+		<div class="close-icon">
+			<img src="img/icons/close.svg" id="close-button">
+		</div>
+		<p class="nav-item">Concept</p>
+		<p class="nav-item">Products</p>
+		<p class="nav-item">Contact</p>
+		<div class="logo">
+			<img src="img/icons/logo.svg" alt="logo" />
+		</div>
+	</div>
 	<section>
+		<div class="overlays"></div>
 		<nav>
 			<h1 class="title">Mamasan Shoppe</h1>
 			<div class="nav-items" id="nav">
@@ -66,40 +79,38 @@
 				</a>
 			</div>
 		</div>
-
 		<!-- build a footer -->
-		<footer>
-			<div class="wrapper">
-				<div class="column">
-					<h2 class="subject">About us</h2>
-					<ul>
-						<li>Blog</li>
-						<li>Press</li>
-						<li>FAQs & Contact</li>
-					</ul>
-				</div>
-				<div class="column">
-					<h2 class="subject">Get involved</h2>
-					<ul>
-						<li>Careers</li>
-						<li>Donate</li>
-						<li>Etsy</li>
-					</ul>
-				</div>
-				<div class="column">
-					<h2 class="subject">Stay Connected</h2>
-					<i class="fa fa-facebook"></i>
-					<i class="fa fa-instagram"></i>
-					<i class="fa fa-twitter"></i>
-				</div>
-				<div class="column">
-					<h2 class="subject">Sign up for our newsletter</h2>
-					<input type="text" class="email-signup" placeholder="Enter your email address.." required>
-					<button type="submit">JOIN</button>
-				</div>
+	<footer>
+		<div class="wrapper">
+			<div class="column">
+				<h2 class="subject">About us</h2>
+				<ul>
+					<li>Blog</li>
+					<li>Press</li>
+					<li>FAQs & Contact</li>
+				</ul>
 			</div>
-		</footer>
-	</section>
+			<div class="column">
+				<h2 class="subject">Get involved</h2>
+				<ul>
+					<li>Careers</li>
+					<li>Donate</li>
+					<li>Etsy</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h2 class="subject">Stay Connected</h2>
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-twitter"></i>
+			</div>
+			<div class="column">
+				<h2 class="subject">Sign up for our newsletter</h2>
+				<input type="text" class="email-signup" placeholder="Enter your email address.." required>
+				<button type="submit">JOIN</button>
+			</div>
+		</div>
+	</footer>
 	<script src="js/app.min.js" type="text/javascript"></script>
 	<script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3002/browser-sync/browser-sync-client.js?v=2.18.2'><\/script>".replace("HOST", location.hostname));

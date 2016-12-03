@@ -16,6 +16,7 @@ nav {
   position: relative;
   float: right;
   cursor: pointer;
+  transition: 1s ease all;
   .nav-item {
     display: inline-flex;
     padding: 32px 50px;
@@ -25,10 +26,38 @@ nav {
     &:last-child {
         padding-right: 0px;
     }
+    // @include mobile {
+    //   display: list-item;
+    //   list-style: none;
+    //   text-align: center;
+    //   padding: 0;
+    //   margin: 0;
+    //   font-family: $lora;
+    //   color: $grey;
+    //   text-transform: uppercase;
+    //   @include font(30px, 50px);
+    //
+    //   &:first-child {
+    //     &::before {
+    //       content: 'close';
+    //       @include font-size(12px);
+    //       width: 100%;
+    //       float: left;
+    //       text-align: left;
+    //       padding: 30px;
+    //     }
+    //   }
+    // }
   }
-  @include mobile {
-
-  }
+  // @include mobile {
+  //   position: fixed;
+  //   right: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   width: 40%;
+  //   height: 100%;
+  //   z-index: 10;
+  // }
 }
 
 #menu {
@@ -36,11 +65,13 @@ nav {
   background-color: $grey !important;
   padding-top: 32px;
   cursor: pointer;
+  z-index: 10;
+
   @include mobile {
-		width:1.4em;
+		width: 1.4em;
 		display: block;
-		background:#ddd;
-		font-size:1.35em;
+		background: #ddd;
+		font-size: 1.8em;
 		text-align: center;
   }
   @include desktop {

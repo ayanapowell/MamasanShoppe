@@ -1,0 +1,43 @@
+#responsive-nav {
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  z-index: 9;
+  transition: 0.8s ease all;
+  background-color: inherit;
+
+  img {
+    width: 8%;
+    position: absolute;
+    right: 0;
+    margin: 30px 40px;
+    cursor: pointer;
+  }
+  p {
+    @include font(30px, 20px);
+    cursor: pointer;
+    text-align: center;
+    font-family: $opensans;
+    // border-bottom/: 2px solid $darkgrey;
+    // width: 0;
+    margin: 40px 20%;
+    text-transform: uppercase;
+    &:hover {
+      color: $darkaqua;
+    }
+    // img {
+    //   width: 80%;
+    // }
+  }
+  .close-icon {
+    width: 80%;
+    height: 65px;
+    margin-left: 10%;
+    border-bottom: 1px solid $white;
+  }
+}
+
+.hidden-nav {
+  right: -40% !important;
+}
