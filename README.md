@@ -13,7 +13,7 @@
 
 ## Known Bugs
 
-_There are no known bugs at this time_
+_No known bugs at this time_
 
 ## Support and contact details
 
