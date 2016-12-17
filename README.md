@@ -4,10 +4,6 @@
 
 #### By _**Ayana Powell**_
 
-## Description
-
- _**View at: https://ayanapowell.github.io/mamasanshoppe/**_
-
 ## Setup/Installation Requirements
 
 * _Clone this repository_
