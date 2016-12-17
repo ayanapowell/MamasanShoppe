@@ -1,14 +1,12 @@
-# _Code Review_
+# _Mamasan Shoppe_
 
-#### _Code Review for Epicodus, 8/5/2016_
+#### _A pottery blog_
 
 #### By _**Ayana Powell**_
 
 ## Description
 
  _**View at: https://ayanapowell.github.io/mamasanshoppe/**_
-
-_TThis is a webpage for Ayana Powell's code review at Epicodus. It will essentially be a portfolio about my current skill, and my goals for the coming months at Epicodus. It will contain HTML tag elements, bootstrap classes and custom stylesheet with cascading, box model and floats._
 
 ## Setup/Installation Requirements
 
@@ -30,6 +28,9 @@ _You can reach us with feedback, questions, or bug reports at: ayanapowell1@gmai
 _HTML_
 _CSS_
 _Bootstrap_
+_Javascript_
+_Gulp_
+_Node_
 
 ### License
 
